@@ -1,0 +1,105 @@
+html,
+body {
+  height: 100%;
+}
+
+.bg-primary {
+  background-color: #3c8dbc !important;
+}
+
+#topbar {
+  position: absolute;
+  width: 100%;
+}
+
+#topbar .navbar-nav li a {
+  color: white !important;
+}
+
+.nav-item:focus,
+.nav-item:hover,
+.nav-link:focus,
+.nav-link:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+.cover-container {
+  padding-top: 30px;
+  margin: 58px 0 0 250px;
+  position: absolute;
+  display: block;
+  height: auto;
+  width: auto;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  color: #000;
+  text-align: left;
+  overflow-y: scroll;
+}
+
+.inner .cover {
+  width: 80%;
+}
+
+@media (max-width: 575px) {
+  .inner {
+    width: 90%;
+  }
+}
+
+@media (min-width: 576px) {
+  .inner {
+    width: 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  .inner {
+    width: 65%;
+  }
+}
+
+@media (min-width: 992px) {
+  .inner {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .inner {
+    width: 60%;
+  }
+    .container {
+        max-width: 1400px;
+    }
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.net-properties{
+  height: auto;
+  width: auto;
+  color: #ffffff;
+  border: 0.05rem solid #fff;
+}
+
+.cover .btn-secondary {
+  font-weight: bold;
+  color: #333;
+  text-shadow: none;
+  /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: 0.05rem solid #fff;
+}
