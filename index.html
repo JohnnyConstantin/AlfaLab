@@ -50,8 +50,26 @@
         <span>Посадочные страницы и Word Press сайты для развития Ваших идей</span>
 
         <div class="order">
-            <button>Сделать заказ</button>
-            <button>Узнать больше</button>
+            <a href="#" class="btn" id="order"><span>Сделать заказ</span></a>
+            <a href="#" class="btn" id="more"><span>Узнать больше</span></a>
+            <script>
+                const btn = document.querySelector('.btn');
+                btn.onmousemove = function (e){
+                    const x = e.pageX - btn.offsetLeft;
+                    const y = e.pageY - btn.offsetTop;
+
+                    btn.style.setProperty('--x', x + 'px');
+                    btn.style.setProperty('--y', y + 'px');
+                }
+                const more = document.querySelector('#more')
+                more.onmousemove = function (e){
+                    const x = e.pageX - more.offsetLeft;
+                    const y = e.pageY - more.offsetTop;
+
+                    more.style.setProperty('--x', x + 'px');
+                    more.style.setProperty('--y', y + 'px');
+                }
+            </script>
         </div>
     </div>
     <div class="box">
