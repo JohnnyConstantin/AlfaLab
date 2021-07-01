@@ -3,7 +3,7 @@
     width: 300px;
     height: 300px;
     transform-style: preserve-3d;
-    animation: animate 40s linear infinite;
+    animation: animate 60s linear infinite;
     margin: 70px 0 0 auto;
 
     z-index: -1;
