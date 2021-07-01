@@ -4,7 +4,7 @@
     height: 300px;
     transform-style: preserve-3d;
     animation: animate 40s linear infinite;
-    margin: 200px 150px 0 auto;
+    margin: 70px 0 0 auto;
 
     z-index: -1;
 }

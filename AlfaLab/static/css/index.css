@@ -4,6 +4,34 @@ header{
     margin:0 auto
 }
 
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.info span{
+    font-size: 2rem;
+}
+
+section{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    padding: 150px 0 100px 0;
+    margin:0 auto
+}
+
+.about{
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about h1{
+    font-size: 5rem;
+}
+
 .navbar-collapse{
     justify-content: center;
 }
@@ -11,4 +39,11 @@ header{
 .navbar-nav > li{
     padding-left:30px;
     padding-right:30px;
+}
+
+.order{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
