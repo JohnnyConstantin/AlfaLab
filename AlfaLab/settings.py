@@ -7,15 +7,17 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-from pathlib import Path
+#from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-import django.conf.global_settings
-
-BASE_DIR = Path(__file__).resolve().parent.parent
+#import django.conf.global_settings
+#BASE_DIR = Path(__file__).resolve().parent.parent
 
 import os
-#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROJECT_DIR = os.path.dirname(__file__)
+print(BASE_DIR)
+print(PROJECT_DIR)
+print([os.path.join(BASE_DIR, 'AlfaLab/templates').replace('\\', '/')])
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -55,8 +57,7 @@ ROOT_URLCONF = 'AlfaLab.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'AlfaLab/templates').replace('\\', '/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -78,12 +79,10 @@ WSGI_APPLICATION = 'AlfaLab.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3').replace('\\', '/'),
     }
 }
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -107,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-ru'
 
 TIME_ZONE = 'UTC'
 
@@ -122,7 +121,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
+#STATIC_ROOT = os.path.join(BASE_DIR, 'AlfaLab/static').replace('\\', '/')
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'AlfaLab/static').replace('\\', '/'),)
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
