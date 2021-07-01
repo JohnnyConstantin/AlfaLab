@@ -8,7 +8,8 @@ header{
     margin:0 auto
 }
 
-.info{
+.info,
+.interest {
     padding-right: 100px;
     display: flex;
     flex-direction: column;
@@ -24,6 +25,15 @@ section{
     flex-direction: row;
     padding: 150px 0 100px 0;
     margin:0 auto
+}
+
+.test {
+    position: absolute;
+    background-color: #abc;
+    left: 50px;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
 }
 
 .about{
@@ -101,3 +111,29 @@ section{
     position: relative;
     z-index: 1;
 }
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 992px) {
+    .interest {
+        max-width: 960px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+
+
+
+
