@@ -112,6 +112,28 @@ section{
     z-index: 1;
 }
 
+.why-us{
+    margin-top: 200px;
+    width: 100% !important;
+    background: #dcdcdc;
+}
+
+.why-us-card{
+    position: relative;
+    margin: -200px auto;
+    background: #359aee;
+    width: 50%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.why-us-card span{
+    margin: 0;
+    font-size: 3rem;
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
@@ -132,8 +154,5 @@ section{
         max-width: 540px;
     }
 }
-
-
-
 
 
