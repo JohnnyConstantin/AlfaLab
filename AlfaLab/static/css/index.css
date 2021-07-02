@@ -160,4 +160,165 @@ section{
     }
 }
 
+.carousel-fff{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 400px;
+}
 
+.price{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 400px;
+}
+
+.price  span{
+    font-size: 3rem;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height:  auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .f-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .f-container .sec{
+    margin-right: 30px;
+}
+
+footer .f-container .sec.aboutus{
+    width: 40%;
+}
+
+footer .f-container h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+
+footer .f-container h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #a42ad4;
+}
+
+footer p{
+    color: #999;
+}
+
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover{
+   background: #a42ad4;
+}
+
+.sci li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+
+.quickLinks{
+    position: relative;
+    width: 25%;
+}
+
+.quickLinks ul li{
+    list-style: none;
+}
+
+.quickLinks ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quickLinks ul li a:hover{
+    color: #fff;
+}
+
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contact .f-info{
+    position: relative;
+}
+
+.contact .f-info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .f-info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .f-info li span{
+    color: #999;
+}
+
+.contact .f-info li a{
+    color: #999;
+    text-decoration: none;
+}
+
+.contact .f-info li a:hover{
+    color: #fff;
+}
+
+.copyrightText{
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+}
