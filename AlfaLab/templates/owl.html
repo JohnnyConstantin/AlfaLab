@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="featured-carousel owl-carousel owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage" style="transform: translate3d(-1440px, 0px, 0px); transition: all 0.25s ease 0s; width: 3960px;">
+                        {% for item in context %}
+                        <div class="owl-item" style="width: 330px; margin-right: 30px;">
+                            <div class="item">
+                                <div class="work">
+                                    <div class="img d-flex align-items-end justify-content-center" style="background-image:url({{ item.img }})">
+                                        <div class="text w-100">
+                                            {% if 'tag1' in item %}
+                                            {{ item.tag1 | safe }}
+                                            {% endif %}
+                                            {% if 'tag2' in item %}
+                                            {{ item.tag2 | safe }}
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class ComingsoonConfig(AppConfig):
+class AlfaLabConfig(AppConfig):
     name = 'AlfaLab'

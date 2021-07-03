@@ -1,13 +1,10 @@
 from django.shortcuts import render
+from AlfaLab.custom import owl
 
 
 def index(request):
-    context = {}
-    template = 'index.html'
-    return render(request, template, context)
+    return render(request, 'index.html', {'context': owl.owl_list})
 
 
 def home(request):
-    context = {}
-    template = 'home.html'
-    return render(request, template, context)
+    return render(request, 'home.html', {})
