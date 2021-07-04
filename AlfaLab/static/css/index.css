@@ -139,26 +139,26 @@ section{
     font-size: 3rem;
 }
 
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
-}
-@media (min-width: 992px) {
-    .interest {
-        max-width: 960px;
-    }
-}
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-}
+/*@media (min-width: 1200px) {*/
+/*    .container {*/
+/*        max-width: 1140px;*/
+/*    }*/
+/*}*/
+/*@media (min-width: 992px) {*/
+/*    .interest {*/
+/*        max-width: 960px;*/
+/*    }*/
+/*}*/
+/*@media (min-width: 768px) {*/
+/*    .container {*/
+/*        max-width: 720px;*/
+/*    }*/
+/*}*/
+/*@media (min-width: 576px) {*/
+/*    .container {*/
+/*        max-width: 540px;*/
+/*    }*/
+/*}*/
 
 .carousel-fff{
     display: flex;
@@ -321,4 +321,15 @@ footer p{
     padding: 8px 100px;
     text-align: center;
     color: #999;
+}
+
+.al-animate {
+    opacity: 1;
+    transform: translateZ(0) scale(1);
+    transition-timing-function: ease;
+    transition-duration: .4s;
+    transition-property: opacity,transform;
+/*
+    transform: translate3d(-100px,0,0) scale(.6);
+ */
 }
