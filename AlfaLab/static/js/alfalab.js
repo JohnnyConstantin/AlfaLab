@@ -1,3 +1,14 @@
+// apply settings to an element on page load before scrolling starts for a better visual effect
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.price').animateOnScroll('animate__fadeInRight', 'animate__fadeOutDown');
+
+});
+// applying animation to an element when scrolling
+document.addEventListener('scroll', function() {
+    document.querySelector('.price').animateOnScroll('animate__fadeInRight', 'animate__fadeOutDown');
+//    document.querySelector('.price').animateOnScroll('animate__fadeInRight');
+});
+
 $(document).ready(function() {
 //    $(".header").animated("animate__fadeInUp", "animate__fadeOutDown");
 //    $(".box").animated("animate__fadeInRight", "animate__fadeOutDown");
